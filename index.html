@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Design Observer</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Cody Wilhelm">
+    <meta name="description" content="Rework of design observer">
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <link rel="icon" type ="image/gif" href="images/d.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
+    <script>
+        // toggle between hiding and showing the dropdown content
+        function dropDownCol() {
+            document.getElementById("col-dropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.drop-button')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body>
+    <div id="social-back"></div>
+    <div id="site-wrap">
+        <div id="social-search-bar">
+            <div id="mobile-logo">
+                <a href="#">
+                    <h1 id="mobile-logo-text">DesignObserver</h1>
+                </a>
+            </div>
+            <div class="dropdown">
+                <button id= "col-menu" class="drop-button" onclick="dropDownCol()"></button>
+                <div id="col-dropdown" class="dropdown-content">
+                    <a href="#">Topics</a>
+                    <a href="#">Podcasts</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Competitions</a>
+                    <a href="#">Books</a>
+                    <a href="#">Conferences</a>
+                    <hr class="menu-line">
+                    <a href="#">AIGA</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <a href="#">
+                <div class="social" id="twitter"></div>
+            </a>
+            <a href="#">
+                <div class="social" id="facebook"></div>
+            </a>
+            <a href="#">
+                <div class="social" id="google"></div>
+            </a>
+            <a href="#">
+                <div class="social" id="sound"></div>
+            </a>
+            <a href="#">
+                <div class="social" id="pinterest"></div>
+            </a>
+            <a href="#">
+                <div class="social" id="rss"></div>
+            </a>
+            <form>
+                <input type="text" name="search" placeholder="" class="search">
+            </form>
+            <div id="search"></div>
+        </div>
+        <div id="navigation-bar">
+            <div id="logo">
+                <a href="#"><h1 id="logo-text">DesignObserver</h1></a>
+                <a href="#"><h1 id="logo-under">Presented by AIGA</h1></a>
+            </div>
+            <div class="nav-link">
+                <h4><a href="#">Conferences</a></h4>
+            </div>
+            <div class="nav-spacer"></div>
+            <div class="nav-link">
+                <h4><a href="#">Books</a></h4>
+            </div>
+            <div class="nav-spacer"></div>
+            <div class="nav-link">
+                <h4><a href="#">Competitions</a></h4>
+            </div>
+            <div class="nav-spacer"></div>
+            <div class="nav-link">
+                <h4><a href="#">Jobs</a></h4>
+            </div>
+            <div class="nav-spacer"></div>
+            <div class="nav-link">
+                <h4><a href="#">Podcasts</a></h4>
+            </div>
+            <div class="nav-spacer"></div>
+            <div class="nav-link">
+                <h4><a href="#">Topics</a></h4>
+            </div>
+            <div class="nav-spacer"></div>
+        </div>
+        <a href="#">
+            <div id="feature">
+                <div class="large-thing small-podcast"></div>
+                        <div class="large-text-one">
+                            <h5 class="photo-text-large">How to Enjoy Your City</h5>
+                        </div>
+                        <div class="large-text-two">
+                            <h5 class="photo-text-large-two">Cody Wilhelm</h5>
+                        </div>
+            </div>
+        </a>
+        <div id="topics">
+            <a href="#">
+                <div class="content-pack left-topic">
+                    <div class="photo" id="ph-one">
+                        <div class="small-thing small-podcast"></div>
+                        <div class="small-text-one">
+                            <h5 class="photo-text">S2E9: Ashleigh Axios</h5>
+                        </div>
+                        <div class="small-text-two">
+                            <h5 class="photo-text-two">Bierut + Helfand</h5>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p class="text-type"><b>Michael Bierut + Jessica Helfand </b>| Audio</p>
+                        <hr>
+                        <p class="text-title">S2E9: Ashleigh Axios</p>
+                        <p class="content">When Axios joined the Office of Digital Strategy in 2012, she wasn’t sure how she would fit in. But she found thatthere are a lot more similarities than...</p>
+                        <hr>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="content-pack  right-topic">
+                    <div class="photo" id="ph-two">
+                        <div class="small-thing small-podcast"></div>
+                        <div class="small-text-one">
+                            <h5 class="photo-text">S2E8: Teddy Blanks</h5>
+                        </div>
+                        <div class="small-text-two">
+                            <h5 class="photo-text-two">Bierut + Helfand</h5>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p class="text-type"><b>Michael Bierut + Jessica Helfand </b>| Audio</p>
+                        <hr>
+                        <p class="text-title">S2E8: Teddy Blanks</p>
+                        <p class="content">They ease you into the idea that you’re about to watch a movie, to remove you from the world outside and bring you into the world of the film itself...</p>
+                        <hr>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="content-pack left-topic">
+                    <div class="photo" id="ph-four">
+                        <div class="small-thing small-article"></div>
+                        <div class="small-text-one">
+                            <h5 class="photo-text">Being Sensitive to...</h5>
+                        </div>
+                        <div class="small-text-two">
+                            <h5 class="photo-text-two">Steven Heller</h5>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p class="text-type"><b>Steven Heller </b>| Essays</p>
+                        <hr>
+                        <p class="text-title">Being Sensitive to Insensitivity</p>
+                        <p class="content">I was ostracized as a kid at one of the schools I attended for being Jewish. Although I was not prevented from attending the school, and my...</p>
+                        <hr>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="content-pack right-topic">
+                    <div class="photo" id="ph-three">
+                        <div class="small-thing small-article"></div>
+                        <div class="small-text-one">
+                            <h5 class="photo-text">A Standards Manual...</h5>
+                        </div>
+                        <div class="small-text-two">
+                            <h5 class="photo-text-two">Ashleigh Axios</h5>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p class="text-type"><b>Ashleigh Axios</b> | Essays</p>
+                        <hr>
+                        <p class="text-title">A Standards Manual Reprinted With a New Purpose</p>
+                        <p class="content">The 1960’s and 70’s in the U.S. were ripe with a national environmental awakening, leading to reforms...</p>
+                        <hr>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="content-pack left-topic">
+                    <div class="photo" id="ph-five">
+                        <div class="small-thing small-article"></div>
+                        <div class="small-text-one">
+                            <h5 class="photo-text">Emmett McBain: Art...</h5>
+                        </div>
+                        <div class="small-text-two">
+                            <h5 class="photo-text-two">Lilly Smith</h5>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p class="text-type"><b>Lilly Smith </b>| Essays</p>
+                        <hr>
+                        <p class="text-title">Emmett McBain: Art Direction as Social Equity</p>
+                        <p class="content">Throughout the span of his career as a Chicago-based designer, art director, and entrepreneur Emmett McBain designed...</p>
+                        <hr>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="content-pack right-topic">
+                    <div class="photo" id="ph-six">
+                        <div class="small-thing small-podcast"></div>
+                        <div class="small-text-one">
+                            <h5 class="photo-text">Brian Collins | Audio</h5>
+                        </div>
+                        <div class="small-text-two">
+                            <h5 class="photo-text-two">Debbie Millman</h5>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p class="text-type"><b>Debbie Millman</b> | Audio</p>
+                        <hr>
+                        <p class="text-title">Brian Collins</p>
+                        <p class="content">Brian Collins is a master of many things. For many years he worked at Ogilvy & Mather, where his team designed the fantasy chocolate...</p>
+                        <hr>
+                    </div>
+                </div>
+                </a>
+        </div>
+        <div id="read-more">
+            <p id="read-more-text"><a href="#">Read More</a></p>
+        </div>
+        <div id="ads">
+            <a href="#">
+                <div id="ad-one">
+                    <p class="ad-text">Microsoft</p>
+                </div>
+            </a>
+            <div class="ad-spacer"></div>
+            <a href="#">
+                <div id="ad-two">
+                    <p class="ad-text">Bing</p>
+                </div>
+            </a>
+            <div class="ad-spacer"></div>
+            <a href="#">
+                <div id="ad-three">
+                    <p class="ad-text">Xbox</p>
+                </div>
+            </a>
+        </div>
+        <div id="footer-here">
+            <a href="#">
+                <div id="foot-copy">
+                    <p id="copyw">© 2003-2017 Observer Omnimedia LLC.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="foot-cont">
+                    <h2>AIGA</h2>
+                </div>
+            </a>
+            <div class="foot-spacer">
+                <h3>|</h3>
+            </div>
+            <a href="#">
+                <div class="foot-cont">
+                    <h2>Contact</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="footer-back"></div>    
+</body>
+</html>
